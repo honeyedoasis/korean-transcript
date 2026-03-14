@@ -5,7 +5,7 @@
 ### Requirements
 
 * https://www.python.org/downloads/
-* Install project requirements `pip install -r requirements.txt`
+* Install project requirements `install.bat` or `pip install -r requirements.txt`
 * Create an account for https://www.rtzr.ai/en/stt
 * Make a new application in https://developers.rtzr.ai/dashboard and save your `client_id` and `client_secret`. **You won't be able to see your client_secret again**.
 
@@ -27,7 +27,7 @@ SPEAKER_MAP = {
 
 1. Set the output name for your subtitles: `PROJECT_ID` in `shared.py`
 1. Get your audio file and put it in a folder called audio e.g. `audio/{PROJECT_ID}.m4a` 
-1. Run main.py `python main.py`
+1. Run the program `run.bat` or `python main.py`
 1. It will prompt you for your `client_id` and `client_secret` (you only need to enter this once)
 1. It will then parse the audio (this can take a while)
 1. Once complete you will be prompted to enter a translated file
