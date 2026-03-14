@@ -30,7 +30,7 @@ def generate_srt(transcript, project_id):
         msg = d['msg']
 
         spk_id = d.get('spk')
-        if spk_id is not None and len(SPEAKER_MAP) > 0:
+        if (spk_id is not None) and (spk_id in SPEAKER_MAP):
             msg = f'{SPEAKER_MAP[spk_id]}: {msg}'
             if spk_id != 0:
                 breakpoint()

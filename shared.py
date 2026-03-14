@@ -1,5 +1,4 @@
-PROJECT_ID = 'newstep-3'
-FILE_PATH = rf''
+PROJECT_ID = 'newstep-1'
 AUDIO_PATH = f'audio/{PROJECT_ID}.m4a'
 NUM_MEMBERS = 0
 SPEAKER_MAP = {
