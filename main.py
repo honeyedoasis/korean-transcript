@@ -147,7 +147,9 @@ def main():
 
     ai_path = Path(f'translation/{PROJECT_ID}/ai-translation.txt')
     ai_path.parent.mkdir(parents=True, exist_ok=True)
-    open(ai_path, 'w').close()
+
+    if not ai_path.exists():
+        open(ai_path, 'w').close()
 
     if id_json := send_file_to_process(token):
         print('File sent, waiting for transcription to be processed..')
