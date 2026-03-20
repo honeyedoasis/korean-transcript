@@ -110,8 +110,9 @@ def make_token():
         decode = jwt.decode(auth['token'], "", algorithms=["HS256"], options=options)
 
         time_exp = datetime.fromtimestamp(decode['exp'])
-        if datetime.now() > time_exp:
-            print('Token expired, generating new token')
+        if True or datetime.now() > time_exp:
+            # print('Token expired, generating new token')
+            print('Generating new token')
         else:
             print('Token valid, expires at:', time_exp)
             return
